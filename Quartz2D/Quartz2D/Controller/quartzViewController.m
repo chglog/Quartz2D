@@ -13,6 +13,7 @@
 #import "PieView.h"
 #import "SnowView.h"
 #import "DrawView.h"
+#import "DrawingBoard.h"
 
 @interface quartzViewController ()
 
@@ -42,6 +43,9 @@
     }else if ([self.type isEqualToString:@"AddDrawView"]){
         
         [self AddDrawView];
+    }else if ([self.type isEqualToString:@"AddDrawingBoard"]){
+        
+        [self AddDrawingBoard];
     }
     
 }
@@ -84,7 +88,10 @@
     [self.view addSubview:draw];
 }
 
-
+- (void)AddDrawingBoard{
+    DrawingBoard *draw = [[DrawingBoard alloc] initWithFrame:CGRectMake(20, 100, 300, 350)];
+    [self.view addSubview:draw];
+}
 
 
 - (void)didReceiveMemoryWarning {

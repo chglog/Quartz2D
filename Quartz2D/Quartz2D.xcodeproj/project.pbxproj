@@ -25,6 +25,7 @@
 		FAD1E42720C12787001BF026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD1E42620C12787001BF026 /* Main.storyboard */; };
 		FAD1E42C20C1279C001BF026 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1E42A20C1279C001BF026 /* ViewController.m */; };
 		FAD1E42D20C1279C001BF026 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1E42B20C1279C001BF026 /* AppDelegate.m */; };
+		FAD1E43020C12980001BF026 /* DrawingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1E42F20C12980001BF026 /* DrawingBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		FAD1E42920C1279C001BF026 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FAD1E42A20C1279C001BF026 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAD1E42B20C1279C001BF026 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAD1E42E20C12980001BF026 /* DrawingBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingBoard.h; sourceTree = "<group>"; };
+		FAD1E42F20C12980001BF026 /* DrawingBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,11 +169,11 @@
 		FAD1E40720C126FE001BF026 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1E40B20C126FF001BF026 /* ProgressViewController.h */,
 				FAD1E40820C126FF001BF026 /* ProgressViewController.m */,
 				FAD1E40920C126FF001BF026 /* ProgressViewController.xib */,
-				FAD1E40A20C126FF001BF026 /* quartzViewController.m */,
-				FAD1E40B20C126FF001BF026 /* ProgressViewController.h */,
 				FAD1E40C20C126FF001BF026 /* quartzViewController.h */,
+				FAD1E40A20C126FF001BF026 /* quartzViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,20 +181,22 @@
 		FAD1E40D20C126FF001BF026 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAD1E40E20C126FF001BF026 /* SnowView.h */,
-				FAD1E40F20C126FF001BF026 /* towLineView.h */,
-				FAD1E41020C126FF001BF026 /* DrawView.m */,
-				FAD1E41120C126FF001BF026 /* lineView.m */,
-				FAD1E41220C126FF001BF026 /* QuadCurveView.h */,
-				FAD1E41320C126FF001BF026 /* ProgressView.h */,
-				FAD1E41420C126FF001BF026 /* PieView.h */,
-				FAD1E41520C126FF001BF026 /* SnowView.m */,
-				FAD1E41620C126FF001BF026 /* QuadCurveView.m */,
 				FAD1E41720C126FF001BF026 /* lineView.h */,
+				FAD1E41120C126FF001BF026 /* lineView.m */,
+				FAD1E40F20C126FF001BF026 /* towLineView.h */,
 				FAD1E41820C126FF001BF026 /* towLineView.m */,
-				FAD1E41920C126FF001BF026 /* DrawView.h */,
-				FAD1E41A20C126FF001BF026 /* ProgressView.m */,
+				FAD1E41420C126FF001BF026 /* PieView.h */,
 				FAD1E41B20C126FF001BF026 /* PieView.m */,
+				FAD1E40E20C126FF001BF026 /* SnowView.h */,
+				FAD1E41520C126FF001BF026 /* SnowView.m */,
+				FAD1E41220C126FF001BF026 /* QuadCurveView.h */,
+				FAD1E41620C126FF001BF026 /* QuadCurveView.m */,
+				FAD1E42E20C12980001BF026 /* DrawingBoard.h */,
+				FAD1E42F20C12980001BF026 /* DrawingBoard.m */,
+				FAD1E41920C126FF001BF026 /* DrawView.h */,
+				FAD1E41020C126FF001BF026 /* DrawView.m */,
+				FAD1E41320C126FF001BF026 /* ProgressView.h */,
+				FAD1E41A20C126FF001BF026 /* ProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 				FAD1E42C20C1279C001BF026 /* ViewController.m in Sources */,
 				FAD1E42020C126FF001BF026 /* lineView.m in Sources */,
 				FAD1E41C20C126FF001BF026 /* ProgressViewController.m in Sources */,
+				FAD1E43020C12980001BF026 /* DrawingBoard.m in Sources */,
 				FAD1E42D20C1279C001BF026 /* AppDelegate.m in Sources */,
 				FAD1E42520C126FF001BF026 /* PieView.m in Sources */,
 				FAD1E42420C126FF001BF026 /* ProgressView.m in Sources */,

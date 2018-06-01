@@ -65,6 +65,13 @@
     [DrawView setTitle:@"AddDrawView" forState:UIControlStateNormal];
     [DrawView addTarget:self action:@selector(AddDrawView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:DrawView];
+    
+    
+    UIButton *DrawingBoard = [[UIButton alloc] initWithFrame:CGRectMake(100, 450, 150, 30)];
+    DrawingBoard.backgroundColor = [UIColor greenColor];
+    [DrawingBoard setTitle:@"AddDrawingBoard" forState:UIControlStateNormal];
+    [DrawingBoard addTarget:self action:@selector(AddDrawingBoard) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:DrawingBoard];
 }
 
 - (void)AddLine{
@@ -103,6 +110,16 @@
     VC.type = @"AddDrawView";
     [self.navigationController pushViewController:VC animated:YES];
 }
+
+
+- (void)AddDrawingBoard{
+    
+    quartzViewController *VC = [[quartzViewController alloc] init];
+    VC.type = @"AddDrawingBoard";
+    [self.navigationController pushViewController:VC animated:YES];
+    
+}
+
 
 - (void)ProgressView{
     ProgressViewController *VC = [[ProgressViewController alloc] init];
